@@ -9,7 +9,8 @@ const txPergunta4 = document.querySelector("#txPergunta4")
 
 const btLimpar = document.querySelector("#btLimpar")
 
-function limparFormulario() {
+function limparFormulario(evento) {
+    evento.preventDefault()
     txNome.value = ""
     txEmail.value = ""
     txPergunta1.value = ""
